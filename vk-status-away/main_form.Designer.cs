@@ -39,15 +39,23 @@
             this.украинскиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.латышскийъToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.конфигурацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.информацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.хелпToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.обратнаяСвязьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.статусToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.вернутсяToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отойтиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.удалитьСтатусToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.информацияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.хелпToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.обратнаяСвязьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hello = new System.Windows.Forms.Label();
+            this.guest = new System.Windows.Forms.Label();
+            this.no_status = new System.Windows.Forms.Label();
+            this.status_download = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.view_last_name = new System.Windows.Forms.Label();
+            this.view_first_name = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -119,6 +127,30 @@
             resources.ApplyResources(this.конфигурацияToolStripMenuItem, "конфигурацияToolStripMenuItem");
             this.конфигурацияToolStripMenuItem.Click += new System.EventHandler(this.конфигурацияToolStripMenuItem_Click);
             // 
+            // статусToolStripMenuItem
+            // 
+            this.статусToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.вернутсяToolStripMenuItem,
+            this.отойтиToolStripMenuItem,
+            this.удалитьСтатусToolStripMenuItem});
+            this.статусToolStripMenuItem.Name = "статусToolStripMenuItem";
+            resources.ApplyResources(this.статусToolStripMenuItem, "статусToolStripMenuItem");
+            // 
+            // вернутсяToolStripMenuItem
+            // 
+            this.вернутсяToolStripMenuItem.Name = "вернутсяToolStripMenuItem";
+            resources.ApplyResources(this.вернутсяToolStripMenuItem, "вернутсяToolStripMenuItem");
+            // 
+            // отойтиToolStripMenuItem
+            // 
+            this.отойтиToolStripMenuItem.Name = "отойтиToolStripMenuItem";
+            resources.ApplyResources(this.отойтиToolStripMenuItem, "отойтиToolStripMenuItem");
+            // 
+            // удалитьСтатусToolStripMenuItem
+            // 
+            this.удалитьСтатусToolStripMenuItem.Name = "удалитьСтатусToolStripMenuItem";
+            resources.ApplyResources(this.удалитьСтатусToolStripMenuItem, "удалитьСтатусToolStripMenuItem");
+            // 
             // информацияToolStripMenuItem
             // 
             this.информацияToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -144,34 +176,61 @@
             resources.ApplyResources(this.оПрограммеToolStripMenuItem, "оПрограммеToolStripMenuItem");
             this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
             // 
-            // статусToolStripMenuItem
+            // hello
             // 
-            this.статусToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.вернутсяToolStripMenuItem,
-            this.отойтиToolStripMenuItem,
-            this.удалитьСтатусToolStripMenuItem});
-            this.статусToolStripMenuItem.Name = "статусToolStripMenuItem";
-            resources.ApplyResources(this.статусToolStripMenuItem, "статусToolStripMenuItem");
+            resources.ApplyResources(this.hello, "hello");
+            this.hello.Name = "hello";
             // 
-            // вернутсяToolStripMenuItem
+            // guest
             // 
-            this.вернутсяToolStripMenuItem.Name = "вернутсяToolStripMenuItem";
-            resources.ApplyResources(this.вернутсяToolStripMenuItem, "вернутсяToolStripMenuItem");
+            resources.ApplyResources(this.guest, "guest");
+            this.guest.Name = "guest";
             // 
-            // отойтиToolStripMenuItem
+            // no_status
             // 
-            this.отойтиToolStripMenuItem.Name = "отойтиToolStripMenuItem";
-            resources.ApplyResources(this.отойтиToolStripMenuItem, "отойтиToolStripMenuItem");
+            resources.ApplyResources(this.no_status, "no_status");
+            this.no_status.Name = "no_status";
             // 
-            // удалитьСтатусToolStripMenuItem
+            // status_download
             // 
-            this.удалитьСтатусToolStripMenuItem.Name = "удалитьСтатусToolStripMenuItem";
-            resources.ApplyResources(this.удалитьСтатусToolStripMenuItem, "удалитьСтатусToolStripMenuItem");
+            resources.ApplyResources(this.status_download, "status_download");
+            this.status_download.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::vk_status_away.Properties.Settings.Default, "current_status", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.status_download.Name = "status_download";
+            this.status_download.Text = global::vk_status_away.Properties.Settings.Default.current_status;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("ImageLocation", global::vk_status_away.Properties.Settings.Default, "url_avatar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.pictureBox1.ImageLocation = global::vk_status_away.Properties.Settings.Default.url_avatar;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // view_last_name
+            // 
+            resources.ApplyResources(this.view_last_name, "view_last_name");
+            this.view_last_name.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::vk_status_away.Properties.Settings.Default, "last_name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.view_last_name.Name = "view_last_name";
+            this.view_last_name.Text = global::vk_status_away.Properties.Settings.Default.last_name;
+            // 
+            // view_first_name
+            // 
+            resources.ApplyResources(this.view_first_name, "view_first_name");
+            this.view_first_name.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::vk_status_away.Properties.Settings.Default, "first_name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.view_first_name.Name = "view_first_name";
+            this.view_first_name.Text = global::vk_status_away.Properties.Settings.Default.first_name;
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.status_download);
+            this.Controls.Add(this.no_status);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.guest);
+            this.Controls.Add(this.view_last_name);
+            this.Controls.Add(this.view_first_name);
+            this.Controls.Add(this.hello);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
@@ -179,6 +238,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,6 +264,13 @@
         private System.Windows.Forms.ToolStripMenuItem вернутсяToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem отойтиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem удалитьСтатусToolStripMenuItem;
+        private System.Windows.Forms.Label hello;
+        private System.Windows.Forms.Label view_first_name;
+        private System.Windows.Forms.Label view_last_name;
+        private System.Windows.Forms.Label guest;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label no_status;
+        private System.Windows.Forms.Label status_download;
 
 
     }

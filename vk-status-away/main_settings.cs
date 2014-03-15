@@ -25,11 +25,11 @@ namespace vk_status_away
 
         private void save_settings_Click(object sender, EventArgs e)
         {
-            string status_out = "Нет на месте. " + text_box_status_out.Text;
-            string status_back = "Я на месте. " + text_box_status_back.Text;
-            Properties.Settings.Default.status_out = status_out;
-            Properties.Settings.Default.status_back = status_back;
-            Properties.Settings.Default.Save();
+            //string status_out = "Нет на месте. " + text_box_status_out.Text;
+            //string status_back = "Я на месте. " + text_box_status_back.Text;
+            //Properties.Settings.Default.status_out = status_out;
+            //Properties.Settings.Default.status_back = status_back;
+            //Properties.Settings.Default.Save();
             this.Close();
         }
     }

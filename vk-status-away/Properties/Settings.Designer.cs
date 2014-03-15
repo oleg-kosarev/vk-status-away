@@ -109,13 +109,49 @@ namespace vk_status_away.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("comboBox2")]
-        public string smena_statusa {
+        [global::System.Configuration.DefaultSettingValueAttribute("no_first_name")]
+        public string first_name {
             get {
-                return ((string)(this["smena_statusa"]));
+                return ((string)(this["first_name"]));
             }
             set {
-                this["smena_statusa"] = value;
+                this["first_name"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("no_last_name")]
+        public string last_name {
+            get {
+                return ((string)(this["last_name"]));
+            }
+            set {
+                this["last_name"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("no_avator")]
+        public string url_avatar {
+            get {
+                return ((string)(this["url_avatar"]));
+            }
+            set {
+                this["url_avatar"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("no_get_status")]
+        public string current_status {
+            get {
+                return ((string)(this["current_status"]));
+            }
+            set {
+                this["current_status"] = value;
             }
         }
     }
