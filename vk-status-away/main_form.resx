@@ -125,53 +125,11 @@
     <value>Bottom</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 22</value>
-  </data>
-  <data name="выходToolStripMenuItem.Text" xml:space="preserve">
-    <value>Выход</value>
-  </data>
   <data name="файлToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>299, 19</value>
   </data>
   <data name="файлToolStripMenuItem.Text" xml:space="preserve">
     <value>Файл</value>
-  </data>
-  <data name="русскийToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
-  </data>
-  <data name="русскийToolStripMenuItem.Text" xml:space="preserve">
-    <value>Русский</value>
-  </data>
-  <data name="англискийToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
-  </data>
-  <data name="англискийToolStripMenuItem.Text" xml:space="preserve">
-    <value>Англиский</value>
-  </data>
-  <data name="украинскиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
-  </data>
-  <data name="украинскиToolStripMenuItem.Text" xml:space="preserve">
-    <value>Украинский</value>
-  </data>
-  <data name="латышскийъToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 22</value>
-  </data>
-  <data name="латышскийъToolStripMenuItem.Text" xml:space="preserve">
-    <value>Латышский</value>
-  </data>
-  <data name="сменаЯзыкаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
-  </data>
-  <data name="сменаЯзыкаToolStripMenuItem.Text" xml:space="preserve">
-    <value>Смена языка</value>
-  </data>
-  <data name="конфигурацияToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
-  </data>
-  <data name="конфигурацияToolStripMenuItem.Text" xml:space="preserve">
-    <value>Конфигурация</value>
   </data>
   <data name="настройкиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>299, 19</value>
@@ -179,47 +137,11 @@
   <data name="настройкиToolStripMenuItem.Text" xml:space="preserve">
     <value>Настройки</value>
   </data>
-  <data name="вернутсяToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
-  </data>
-  <data name="вернутсяToolStripMenuItem.Text" xml:space="preserve">
-    <value>Вернутся</value>
-  </data>
-  <data name="отойтиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
-  </data>
-  <data name="отойтиToolStripMenuItem.Text" xml:space="preserve">
-    <value>Отойти</value>
-  </data>
-  <data name="удалитьСтатусToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 22</value>
-  </data>
-  <data name="удалитьСтатусToolStripMenuItem.Text" xml:space="preserve">
-    <value>Удалить статус</value>
-  </data>
   <data name="статусToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>299, 19</value>
   </data>
   <data name="статусToolStripMenuItem.Text" xml:space="preserve">
     <value>Статус</value>
-  </data>
-  <data name="хелпToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 22</value>
-  </data>
-  <data name="хелпToolStripMenuItem.Text" xml:space="preserve">
-    <value>Хелп</value>
-  </data>
-  <data name="обратнаяСвязьToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 22</value>
-  </data>
-  <data name="обратнаяСвязьToolStripMenuItem.Text" xml:space="preserve">
-    <value>Обратная связь</value>
-  </data>
-  <data name="оПрограммеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>159, 22</value>
-  </data>
-  <data name="оПрограммеToolStripMenuItem.Text" xml:space="preserve">
-    <value>О программе</value>
   </data>
   <data name="информацияToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>299, 19</value>
@@ -251,6 +173,84 @@
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="выходToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 22</value>
+  </data>
+  <data name="выходToolStripMenuItem.Text" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="сменаЯзыкаToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="сменаЯзыкаToolStripMenuItem.Text" xml:space="preserve">
+    <value>Смена языка</value>
+  </data>
+  <data name="русскийToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="русскийToolStripMenuItem.Text" xml:space="preserve">
+    <value>Русский</value>
+  </data>
+  <data name="англискийToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="англискийToolStripMenuItem.Text" xml:space="preserve">
+    <value>Англиский</value>
+  </data>
+  <data name="украинскиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="украинскиToolStripMenuItem.Text" xml:space="preserve">
+    <value>Украинский</value>
+  </data>
+  <data name="латышскийъToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="латышскийъToolStripMenuItem.Text" xml:space="preserve">
+    <value>Латышский</value>
+  </data>
+  <data name="конфигурацияToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="конфигурацияToolStripMenuItem.Text" xml:space="preserve">
+    <value>Конфигурация</value>
+  </data>
+  <data name="вернутсяToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="вернутсяToolStripMenuItem.Text" xml:space="preserve">
+    <value>Вернутся</value>
+  </data>
+  <data name="отойтиToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="отойтиToolStripMenuItem.Text" xml:space="preserve">
+    <value>Отойти</value>
+  </data>
+  <data name="удалитьСтатусToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 22</value>
+  </data>
+  <data name="удалитьСтатусToolStripMenuItem.Text" xml:space="preserve">
+    <value>Удалить статус</value>
+  </data>
+  <data name="хелпToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
+  </data>
+  <data name="хелпToolStripMenuItem.Text" xml:space="preserve">
+    <value>Хелп</value>
+  </data>
+  <data name="обратнаяСвязьToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
+  </data>
+  <data name="обратнаяСвязьToolStripMenuItem.Text" xml:space="preserve">
+    <value>Обратная связь</value>
+  </data>
+  <data name="оПрограммеToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 22</value>
+  </data>
+  <data name="оПрограммеToolStripMenuItem.Text" xml:space="preserve">
+    <value>О программе</value>
   </data>
   <data name="hello.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -342,9 +342,6 @@
   <data name="&gt;&gt;no_status.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="status_download.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="status_download.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -352,7 +349,7 @@
     <value>12, 56</value>
   </data>
   <data name="status_download.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 13</value>
+    <value>131, 111</value>
   </data>
   <data name="status_download.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>

@@ -75,6 +75,24 @@ namespace vk_status_away
             if (Settings_cerrent_status == "no_get_status")
             {
                 status_download.Hide();
+                //начинаем доставать status
+                XDocument status_get = XDocument.Load("https://api.vkontakte.ru/method/status.get.xml?access_token=" + Settings_access_token + "&uids=" + Setting_uids);
+                var status = from response in status_get.Descendants("response")
+                             select new
+                             {
+                                 status_text = response.Element("text").Value,
+                                 //LastName = user.Element("last_name").Value,
+                                 //photo_big = user.Element("photo_big").Value
+                                 //get_lastname = response.Element("last_name")
+                             };
+                foreach (var response_text in status)
+                {
+                    Properties.Settings.Default.current_status = response_text.status_text;
+                    //Properties.Settings.Default.last_name = user.LastName;
+                    //Properties.Settings.Default.url_avatar = user.photo_big;
+                    Properties.Settings.Default.Save();
+                    this.Refresh();
+                }
             }
             else
             {

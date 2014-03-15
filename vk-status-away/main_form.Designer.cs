@@ -193,8 +193,8 @@
             // 
             // status_download
             // 
-            resources.ApplyResources(this.status_download, "status_download");
             this.status_download.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::vk_status_away.Properties.Settings.Default, "current_status", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            resources.ApplyResources(this.status_download, "status_download");
             this.status_download.Name = "status_download";
             this.status_download.Text = global::vk_status_away.Properties.Settings.Default.current_status;
             // 
