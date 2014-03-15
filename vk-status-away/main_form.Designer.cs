@@ -51,9 +51,9 @@
             this.guest = new System.Windows.Forms.Label();
             this.no_status = new System.Windows.Forms.Label();
             this.status_download = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.view_last_name = new System.Windows.Forms.Label();
             this.view_first_name = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,7 @@
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
             resources.ApplyResources(this.выходToolStripMenuItem, "выходToolStripMenuItem");
+            this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
             // настройкиToolStripMenuItem
             // 
@@ -140,11 +141,13 @@
             // 
             this.вернутсяToolStripMenuItem.Name = "вернутсяToolStripMenuItem";
             resources.ApplyResources(this.вернутсяToolStripMenuItem, "вернутсяToolStripMenuItem");
+            this.вернутсяToolStripMenuItem.Click += new System.EventHandler(this.вернутсяToolStripMenuItem_Click);
             // 
             // отойтиToolStripMenuItem
             // 
             this.отойтиToolStripMenuItem.Name = "отойтиToolStripMenuItem";
             resources.ApplyResources(this.отойтиToolStripMenuItem, "отойтиToolStripMenuItem");
+            this.отойтиToolStripMenuItem.Click += new System.EventHandler(this.отойтиToolStripMenuItem_Click);
             // 
             // удалитьСтатусToolStripMenuItem
             // 
@@ -169,6 +172,7 @@
             // 
             this.обратнаяСвязьToolStripMenuItem.Name = "обратнаяСвязьToolStripMenuItem";
             resources.ApplyResources(this.обратнаяСвязьToolStripMenuItem, "обратнаяСвязьToolStripMenuItem");
+            this.обратнаяСвязьToolStripMenuItem.Click += new System.EventHandler(this.обратнаяСвязьToolStripMenuItem_Click);
             // 
             // оПрограммеToolStripMenuItem
             // 
@@ -198,14 +202,6 @@
             this.status_download.Name = "status_download";
             this.status_download.Text = global::vk_status_away.Properties.Settings.Default.current_status;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("ImageLocation", global::vk_status_away.Properties.Settings.Default, "url_avatar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.pictureBox1.ImageLocation = global::vk_status_away.Properties.Settings.Default.url_avatar;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // view_last_name
             // 
             resources.ApplyResources(this.view_last_name, "view_last_name");
@@ -219,6 +215,14 @@
             this.view_first_name.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::vk_status_away.Properties.Settings.Default, "first_name", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
             this.view_first_name.Name = "view_first_name";
             this.view_first_name.Text = global::vk_status_away.Properties.Settings.Default.first_name;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.DataBindings.Add(new System.Windows.Forms.Binding("ImageLocation", global::vk_status_away.Properties.Settings.Default, "url_avatar", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.pictureBox1.ImageLocation = global::vk_status_away.Properties.Settings.Default.url_avatar;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // Form1
             // 
