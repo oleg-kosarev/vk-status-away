@@ -1,0 +1,30 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="vk_status_away.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="access_token" Type="System.String" Scope="User">
+      <Value Profile="(Default)">no_access_token</Value>
+    </Setting>
+    <Setting Name="user_id" Type="System.String" Scope="User">
+      <Value Profile="(Default)">no_user_id</Value>
+    </Setting>
+    <Setting Name="timer_eneble" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="timer_interval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="status_back" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Статус возврата ещё не записан</Value>
+    </Setting>
+    <Setting Name="status_out" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Статус ухода ещё не написан</Value>
+    </Setting>
+    <Setting Name="auto_start" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="smena_statusa" Type="System.String" Scope="User">
+      <Value Profile="(Default)">comboBox2</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
