@@ -16,9 +16,9 @@ using System.Xml.Linq;
 
 namespace vk_status_away
 {
-    public partial class Form1 : Form
+    public partial class main_forms : Form
     {
-        public Form1()
+        public main_forms()
         {
             InitializeComponent();
         }
@@ -35,6 +35,7 @@ namespace vk_status_away
             string Settings_status_back = Properties.Settings.Default.status_back;
             string Settings_status_out = Properties.Settings.Default.status_out;
             //Конец определяем переменные с информацией в конфиге
+            temp_current_status.Hide();
 
             if (Settings_access_token == "no_access_token")
             {
@@ -127,6 +128,11 @@ namespace vk_status_away
 
         private void вернутсяToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //вытягиваем текущий установленый статус и заносим в темп
+            /*-----------*/
+            //..
+            /*------------*/
+            
             //начинаем отпровлять status
             string Settings_access_token = Properties.Settings.Default.access_token; //Получаем из настроек access_token
             string Setting_uids = Properties.Settings.Default.user_id;
@@ -150,12 +156,17 @@ namespace vk_status_away
                 //Properties.Settings.Default.url_avatar = user.photo_big;
                 Properties.Settings.Default.Save();
                 this.Refresh();
-            }
+            }            
             status_download.Refresh();
         }
 
         private void отойтиToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //вытягиваем текущий установленый статус и заносим в темп
+            /*-----------*/
+            //..
+            /*------------*/
+            
             //начинаем отпровлять status
             string Settings_access_token = Properties.Settings.Default.access_token; //Получаем из настроек access_token
             string Setting_uids = Properties.Settings.Default.user_id;
@@ -181,8 +192,23 @@ namespace vk_status_away
                 this.Refresh();
             }
             status_download.Refresh();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+        }
+
+        private void удалитьСтатусToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //скрываем все ненужные статусы...
+            status_download.Hide();
+            no_status.Hide();
             
-            status_download.Refresh();
+            //вытягиваем из сетигов темповский статус
+            /*----------*/
+            //..
+            /*------------*/
         }
         //Заканчиваем описывать меню
     }
