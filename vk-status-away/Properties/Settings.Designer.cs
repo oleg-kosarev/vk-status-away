@@ -154,5 +154,17 @@ namespace vk_status_away.Properties {
                 this["current_status"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("no_get_current_status_temp")]
+        public string current_status_temp {
+            get {
+                return ((string)(this["current_status_temp"]));
+            }
+            set {
+                this["current_status_temp"] = value;
+            }
+        }
     }
 }

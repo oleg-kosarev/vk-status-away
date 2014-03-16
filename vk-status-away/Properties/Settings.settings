@@ -35,5 +35,8 @@
     <Setting Name="current_status" Type="System.String" Scope="User">
       <Value Profile="(Default)">no_get_status</Value>
     </Setting>
+    <Setting Name="current_status_temp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">no_get_current_status_temp</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

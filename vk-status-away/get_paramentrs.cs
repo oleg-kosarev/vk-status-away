@@ -67,13 +67,14 @@ namespace vk_status_away
                     //MessageBox.Show(Settings_user_id + "------Settings_user_id");
                 }
 
-                
+                main_forms main_forms = new main_forms();
+                main_forms.Refresh(); 
                 this.Close();
-                //main_settings main_settings = new main_settings();
+               // main_forms main_forms = new main_forms();
                 //main_settings.Refresh();
 
-                //main_windows main_windows = new main_windows();
-                //main_windows.Refresh();
+                //main_forms main_form = new main_forms();
+                //main_form.Refresh(); 
             }
         }
     }
